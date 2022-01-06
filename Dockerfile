@@ -5,8 +5,8 @@ RUN apk update \
 
 RUN mkdir /apps \
 && touch /apps/touch.txt \
-#&& export http_proxy=http://10.48.211.3:8118 \
-#&& export https_proxy=http://10.48.211.3:8118 \
+&& export http_proxy=http://10.48.211.3:8118 \
+&& export https_proxy=http://10.48.211.3:8118 \
 && git clone https://github.com/yueyanglouji/Clone-processon.git \
 && mv -f Clone-processon /apps \
 && cd /apps/Clone-processon \
